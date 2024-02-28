@@ -119,7 +119,7 @@
                         </div>
                         <div class=" mid-left-header col-md-6 d-flex align-items-center justify-content-md-end justify-content-between flex-grow-1 flex-wrap flex-sm-nowrap">
                             <div class="header-contact-info">
-                                <a href="tel:56923615422">
+                                <a href="tel:702-502-2040">
                                     <div class="header-contact-inner">
                                         <span class="icon">
                                             <!-- <i aria-hidden="true" class="icon icon-phone"></i> -->
@@ -127,7 +127,7 @@
                                         </span>
                                         <div class="details-content">
                                             <span class="content-title">24*7 EMERGENCY SERVICES</span>
-                                            <h5>tel: 702-338-1737</h5>
+                                            <h5>tel: 702-502-2040</h5>
                                         </div>
                                     </div>
                                 </a>
@@ -510,7 +510,7 @@
                             <h6 class="section-sub-title">APPLY FOR APPOINTMENT</h6>
                             <h4 class="service-title">Contact us</h4>
                         </div>
-                        <form action="https://formkeep.com/f/36df6f54befe" method="POST" target="_blank" enctype="multipart/form-data" class="reservation-form row">
+                        <form action="https://formkeep.com/f/570fe7c74b1d" method="POST" target="_blank" enctype="multipart/form-data" class="reservation-form row">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 px-1 form-group">
                                 <input required type="text" name="name" id="name" placeholder="Your Name..">
                             </div>
@@ -522,9 +522,44 @@
                                 <textarea style="background-color: #f8f8f8;border: none;padding: 1em;
                                 height: 120px;border-radius: 30px;" name="message" class="form-control" id="message" rows="5" placeholder="Your message" required=""></textarea>
                             </div>
-                            <div class="col-12 px-1 form-group">
-                                <button type="submit" class="button-round-primary">Send</button>
+                            <fieldset>
+                                <div class="row">
+                                <div class="form-group col-xs-12" id="Type_of_Service__div">
+                                <label for="Type_of_Service">Type of Service *</label>
+                                <select name="Type of Service" id="Type_of_Service" required="required" autofocus="autofocus" class="form-control"><option value="">Choose</option>
+                                    <option value="Handyman">Handyman</option>
+                                    <option value="Plumbing">Plumbing</option>
+                                    <option value="Electrical">Electrical</option>
+                                    <option value="Landscaping">Landscaping</option></select>
                             </div>
+                            </div>
+                                <div class="row">
+                                <div class="form-group col-xs-12" id="Phone_Number__div">
+                                <label title="required" for="Phone_Number">Phone Number *</label>
+                                <input type="tel" name="Phone Number" id="Phone_Number" value="" required="required" placeholder="-" class="form-control" />
+                            </div>
+                            </div>
+                                <div class="row">
+                                <div class="form-group col-xs-12" id="Photos__div">
+                                <label for="Photos">Photos</label>
+                                <input type="file" name="Photos[]" id="Photos_" accept=".ai,.bmp,.csv,.doc,.docx,.eps,.gif,.gz,.gzip,.jpe,.jpeg,.jpg,.jpjpeg,.pdf,.png,.ppt,.pptx,.ps,.rtf,.svg,.text,.tif,.tiff,.txt,.xls,.xml,.xslx,.zip" multiple="multiple" data-controller="validated-file-upload" data-direct-upload-url="https://formkeep.com/rails/active_storage/direct_uploads" class="form-control" />
+                                <input type="hidden" name="_attachment_fields[]" id="_attachment_fields_" value="Photos" autocomplete="off" />
+                                <br>
+                            </div>
+                            </div>
+                            <br>
+                            <div style="opacity:0;position:absolute;top:0;left:-5000px;height:0;width:0">
+                              <label for="subscribe_f103743b9223_45139"></label>
+                              <input name="subscribe_f103743b9223_45139" value="" tabindex="-1" autocomplete="off"
+                                    type="email" id="email_subscribe_f103743b9223_45139" placeholder="Your email here">
+                            </div>
+                            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response" value="" autocomplete="off" />
+                            <div class="row">
+                              <div class="col-xs-12">
+                                <input type="submit" value="Submit" class="btn btn-block btn-primary" data-disable-with="Submit" />
+                              </div>
+                            </div>
+                          </fieldset>
                         </form>
                     </div>
                 </div>
@@ -570,7 +605,7 @@
                                     <span class="contact-title">
                                         Call us now :
                                     </span>
-                                    <a href="tel:+702-338-1737">tel: 702-338-1737</a>
+                                    <a href="tel:+702-502-2040">tel: 702-502-2040</a>
                                 </aside>
                             </div>
                         </div>
