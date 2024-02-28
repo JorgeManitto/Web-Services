@@ -507,40 +507,40 @@
                     <div class="reservation-content" style="width: 100%;  border-radius: 30px;   padding: 50px 50px 44px;
                     background-color: #FFD974;">
                         <div class="section-head">
-                            <h6 class="section-sub-title">APPLY FOR APPOINTMENT</h6>
+                            <h6 class="section-sub-title">REQUEST AN APPOINTMENT</h6>
                             <h4 class="service-title">Contact us</h4>
                         </div>
-                        <form action="https://formkeep.com/f/570fe7c74b1d" method="POST" target="_blank" enctype="multipart/form-data" class="reservation-form row">
+                        <form action="https://formkeep.com/f/570fe7c74b1d" method="POST" target="_blank" enctype="multipart/form-data" class="reservation-form ">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 px-1 form-group">
+                                <label title="required" for="name">Name</label>
                                 <input required type="text" name="name" id="name" placeholder="Your Name..">
                             </div>
+                            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-12 px-1" id="Phone_Number__div">
+                                <label title="required" for="Phone_Number">Phone Number *</label>
+                                <input type="tel" name="Phone Number" id="Phone_Number" value="" required="required" placeholder="206 342-8631" class="form-control" />
+                            </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12 px-1 form-group">
+                                <label title="required" for="email">Email</label>
                                 <input required type="email" name="email" id="email" placeholder="Your Email Address..">
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 px-1 form-group">
-                                <!-- <input type="text" name="subject" id="subject" placeholder="Your Subject.."> -->
-                                <textarea style="background-color: #f8f8f8;border: none;padding: 1em;
-                                height: 120px;border-radius: 30px;" name="message" class="form-control" id="message" rows="5" placeholder="Your message" required=""></textarea>
-                            </div>
-                            <fieldset>
-                                <div class="row">
-                                <div class="form-group col-xs-12" id="Type_of_Service__div">
+                            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-12 px-1" id="Type_of_Service__div">
                                 <label for="Type_of_Service">Type of Service *</label>
                                 <select name="Type of Service" id="Type_of_Service" required="required" class="form-control"><option value="">Choose</option>
                                     <option value="Handyman">Handyman</option>
                                     <option value="Plumbing">Plumbing</option>
                                     <option value="Electrical">Electrical</option>
-                                    <option value="Landscaping">Landscaping</option></select>
+                                    <option value="Landscaping">Landscaping</option>
+                                </select>
                             </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 px-1 form-group">
+                                <label for="message">Message</label>
+                                <textarea style="background-color: #f8f8f8;border: none;padding: 1em;
+                                height: 120px;border-radius: 30px;" name="message" class="form-control" id="message" rows="5" placeholder="Your message" required=""></textarea>
                             </div>
+                            <fieldset>
+                                
                                 <div class="row">
-                                <div class="form-group col-xs-12" id="Phone_Number__div">
-                                <label title="required" for="Phone_Number">Phone Number *</label>
-                                <input type="tel" name="Phone Number" id="Phone_Number" value="" required="required" placeholder="-" class="form-control" />
-                            </div>
-                            </div>
-                                <div class="row">
-                                <div class="form-group col-xs-12" id="Photos__div">
+                                <div class="form-group col-lg-6 col-md-6 col-sm-6 col-12 px-1" id="Photos__div" style="margin-bottom: 0;">
                                 <label for="Photos">Photos</label>
                                 <input type="file" name="Photos[]" id="Photos_" accept=".ai,.bmp,.csv,.doc,.docx,.eps,.gif,.gz,.gzip,.jpe,.jpeg,.jpg,.jpjpeg,.pdf,.png,.ppt,.pptx,.ps,.rtf,.svg,.text,.tif,.tiff,.txt,.xls,.xml,.xslx,.zip" multiple="multiple" data-controller="validated-file-upload" data-direct-upload-url="https://formkeep.com/rails/active_storage/direct_uploads" class="form-control" />
                                 <input type="hidden" name="_attachment_fields[]" id="_attachment_fields_" value="Photos" autocomplete="off" />
